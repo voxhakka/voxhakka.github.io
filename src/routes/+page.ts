@@ -24,7 +24,28 @@ export const load: PageLoad = ({ params }) => {
                 audioUrl: "/audio/sixian.5.wav",
             },
         ],
-        海陸腔: [],
+        海陸腔: [
+            {
+                text: "男女平等个時代，平平做得受教育",
+                audioUrl:""
+            },
+            {
+                text: "解決三餐無落著个問題",
+                audioUrl:""
+            },
+            {
+                text: "老人共餐个主要精神應當斯係做伴",
+                audioUrl:""
+            },
+            {
+                text: "連發病都無人知",
+                audioUrl:""
+            },
+            {
+                text: "有機會渡你兜參加新丁粄節好無",
+                audioUrl:""
+            },
+        ],
         大埔腔: [],
         饒平腔: [],
         詔安腔: [],
