@@ -1,6 +1,7 @@
 <!-- src/routes/+page.svelte -->
 <script lang="ts">
 	import type { PageData } from './$types';
+	import { base } from '$app/paths';
 
 	export let data: PageData;
 
@@ -12,7 +13,7 @@
 </script>
 
 <div class="container mx-auto px-4 py-8">
-	<div class="border p-8 mb-4 shadow-xl">
+	<div class="mb-4 border p-8 shadow-xl">
 		<h1 class="mb-2 text-center text-5xl">VoxHakka:</h1>
 		<h3 class="mb-6 text-center text-3xl">
 			A Dialectally Diverse Multi-speaker Text-to-Speech System for Taiwanese Hakka
@@ -39,7 +40,7 @@
 		{#each Object.keys(data.audioInfos) as tab}
 			<button
 				class="px-4 py-2 text-sm font-medium {data.activeTab === tab
-					? 'bg-white text-gray-800 border-b-transparent  border'
+					? 'border border-b-transparent bg-white  text-gray-800'
 					: 'bg-gray-100 text-blue-500'}"
 				on:click={() => setActiveTab(tab)}
 			>
@@ -48,11 +49,11 @@
 		{/each}
 	</div>
 
-	<div class="border p-8 mb-4 shadow-xl border-t-transparent">
+	<div class="mb-4 border border-t-transparent p-8 shadow-xl">
 		{#each data.audioInfos[data.activeTab] as audio_info}
 			<div class="mb-8 rounded-lg border p-4">
 				<p class="mb-2"><b>Text: </b> {audio_info.text}</p>
-				<audio controls src={audio_info.audioUrl} class="w-full"></audio>
+				<audio controls src="{base}{audio_info.audioUrl}" class="w-full"></audio>
 				<!-- <button class="mt-2 text-blue-500">Show baseline(s)</button> -->
 			</div>
 		{/each}
