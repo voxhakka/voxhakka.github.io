@@ -5,8 +5,8 @@
 
 	export let data: PageData;
 
-	function tabToDialectNameMapKey(tab: string){
-		 return tab as  keyof typeof data.dialectNameMap
+	function tabToDialectNameMapKey(tab: string) {
+		return tab as keyof typeof data.dialectNameMap;
 	}
 
 	function setActiveTab(tab: string) {
@@ -38,17 +38,34 @@
 			in Hakka language technology and provides a valuable resource for language preservation and revitalization
 			efforts.
 		</p>
+		<div class="flex">
+			<p class="rounded-3xl bg-gray-800 text-white font-bold	px-4 py-1 mr-2">
+				<a target="" href="https://arxiv.org/abs/2409.01548v1"
+					><span class="icon"><i class="ai ai-arxiv"></i></span> <span>arXiv</span></a
+				>
+			</p>
+			<p class="rounded-3xl bg-gray-800 text-white font-bold	px-4 py-1 mr-2">
+				<a target="" href="https://huggingface.co/formospeech/yourtts-htia-240704"
+					> <span>model</span></a
+				>
+			</p>
+			<p class="rounded-3xl bg-gray-800 text-white font-bold	px-4 py-1">
+				<a target="" href="https://huggingface.co/spaces/formospeech/taiwanese-hakka-tts"
+					> <span>space</span></a
+				>
+			</p>
+		</div>
 	</div>
 
 	<div class="flex overflow-x-auto">
 		{#each Object.keys(data.audioInfos) as tab}
 			<button
 				class="px-4 py-2 text-sm font-medium {data.activeTab === tab
-					? 'border border-b-transparent bg-white  text-gray-800'
+					? 'border border-b-transparent bg-white text-gray-800'
 					: 'bg-gray-100 text-blue-500'}"
 				on:click={() => setActiveTab(tab)}
 			>
-				{data.dialectNameMap[tabToDialectNameMapKey(tab)]}  
+				{data.dialectNameMap[tabToDialectNameMapKey(tab)]}
 			</button>
 		{/each}
 	</div>
