@@ -54,6 +54,14 @@ export const load: PageLoad = ({ params }) => {
 
 	return {
 		audioInfos: audioInfos,
-        activeTab: "四縣腔" as keyof typeof audioInfos
+        activeTab: "四縣腔" as keyof typeof audioInfos,
+        dialectNameMap: {
+            四縣腔: "四縣腔 Sixian",
+            海陸腔: "海陸腔 Hailu",
+            大埔腔: "大埔腔 Dapu",
+            饒平腔: "饒平腔 Raoping",
+            詔安腔: "詔安腔 Zhaoan",
+            南四縣腔: "南四縣腔 Nansixian"
+        }
 	};
 };

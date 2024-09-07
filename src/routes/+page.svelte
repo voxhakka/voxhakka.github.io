@@ -5,6 +5,10 @@
 
 	export let data: PageData;
 
+	function tabToDialectNameMapKey(tab: string){
+		 return tab as  keyof typeof data.dialectNameMap
+	}
+
 	function setActiveTab(tab: string) {
 		if (Object.keys(data.audioInfos).includes(tab)) {
 			data.activeTab = tab as typeof data.activeTab;
@@ -44,7 +48,7 @@
 					: 'bg-gray-100 text-blue-500'}"
 				on:click={() => setActiveTab(tab)}
 			>
-				{tab}
+				{data.dialectNameMap[tabToDialectNameMapKey(tab)]}  
 			</button>
 		{/each}
 	</div>
