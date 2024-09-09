@@ -1,3 +1,4 @@
+import { text } from 'stream/consumers';
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = ({ params }) => {
@@ -74,19 +75,19 @@ export const load: PageLoad = ({ params }) => {
                 audioUrl: "/audio/raoping.1.wav"
             },
             {
-                text: "頭擺匱人，戴个毋係菅草屋，个創商品哦",
+                text: "天時毋好溼氣重，樹仔當遽歿忒",
                 audioUrl: "/audio/raoping.2.wav"
             },
             {
-                text: "頭擺匱人，戴个毋係菅草屋，个創商品哦",
+                text: "電鑊仔个電線係燒忒，該斯危險哩",
                 audioUrl: "/audio/raoping.3.wav"
             },
             {
-                text: "頭擺匱人，戴个毋係菅草屋，个創商品哦",
+                text: "佢生來矮頓矮頓，又專門講該阿里不答个話，敢聽得",
                 audioUrl: "/audio/raoping.4.wav"
             },
             {
-                text: "頭擺匱人，戴个毋係菅草屋，个創商品哦",
+                text: "食到肚扐扐仔个阿叔在藤椅項坐等啄目睡",
                 audioUrl: "/audio/raoping.5.wav"
             }
         ],
@@ -94,6 +95,22 @@ export const load: PageLoad = ({ params }) => {
             {
                 text: "歇熱个時務，阿松歸屋下轉去在客莊个老屋",
                 audioUrl: "/audio/zhaoan.1.wav"
+            },
+            {
+                text: "𠊎先去坐公車，下車過行斑馬線，就到了",
+                audioUrl: "/audio/zhaoan.2.wav"
+            },
+            {
+                text: "為著愛達到目標，佢輒輒噩夜，愛想辦法提高朳仔个產量",
+                audioUrl: "/audio/zhaoan.3.wav"
+            },
+            {
+                text: "𠊎去買菜，買菜講價，買菜就買到",
+                audioUrl: "/audio/zhaoan.4.wav"
+            },
+            {
+                text: "𠊎去看電影，看電影講話，看電影就看到",
+                audioUrl: "/audio/zhaoan.5.wav"
             }
         ],
         南四縣腔: []
