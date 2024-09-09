@@ -64,12 +64,38 @@ export const load: PageLoad = ({ params }) => {
                 audioUrl: "/audio/dapu.4.wav"
             },
             {
-                text: "為著愛達到目標，佢輒輒噩夜，愛想辦法提高朳仔个產量",
+                text: "牛眼拗毋著，同樹椏仔墜下來較好拗",
                 audioUrl: "/audio/dapu.5.wav"
             },
         ],
-        饒平腔: [],
-        詔安腔: [],
+        饒平腔: [
+            {
+                text: "頭擺匱人，戴个毋係菅草屋，个創商品哦",
+                audioUrl: "/audio/raoping.1.wav"
+            },
+            {
+                text: "頭擺匱人，戴个毋係菅草屋，个創商品哦",
+                audioUrl: "/audio/raoping.2.wav"
+            },
+            {
+                text: "頭擺匱人，戴个毋係菅草屋，个創商品哦",
+                audioUrl: "/audio/raoping.3.wav"
+            },
+            {
+                text: "頭擺匱人，戴个毋係菅草屋，个創商品哦",
+                audioUrl: "/audio/raoping.4.wav"
+            },
+            {
+                text: "頭擺匱人，戴个毋係菅草屋，个創商品哦",
+                audioUrl: "/audio/raoping.5.wav"
+            }
+        ],
+        詔安腔: [
+            {
+                text: "歇熱个時務，阿松歸屋下轉去在客莊个老屋",
+                audioUrl: "/audio/zhaoan.1.wav"
+            }
+        ],
         南四縣腔: []
     }
 
