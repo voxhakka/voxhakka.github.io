@@ -27,23 +27,23 @@ export const load: PageLoad = ({ params }) => {
         海陸腔: [
             {
                 text: "男女平等个時代，平平做得受教育",
-                audioUrl:""
+                audioUrl:"/audio/hailu.1.wav"
             },
             {
                 text: "解決三餐無落著个問題",
-                audioUrl:""
+                audioUrl:"/audio/hailu.2.wav"
             },
             {
                 text: "老人共餐个主要精神應當斯係做伴",
-                audioUrl:""
+                audioUrl:"/audio/hailu.3.wav"
             },
             {
                 text: "連發病都無人知",
-                audioUrl:""
+                audioUrl:"/audio/hailu.4.wav"
             },
             {
                 text: "有機會渡你兜參加新丁粄節好無",
-                audioUrl:""
+                audioUrl:"/audio/hailu.5.wav"
             },
         ],
         大埔腔: [],
