@@ -40,7 +40,7 @@
 		</p>
 		<div class="flex">
 			<p class="rounded-3xl bg-gray-800 text-white font-bold	px-4 py-1 mr-2">
-				<a target="" href="https://arxiv.org/abs/2409.01548v1"
+				<a target="" href="https://arxiv.org/abs/2409.01548v3"
 					><span class="icon"><i class="ai ai-arxiv"></i></span> <span>arXiv</span></a
 				>
 			</p>
@@ -50,7 +50,7 @@
 				>
 			</p>
 			<p class="rounded-3xl bg-gray-800 text-white font-bold	px-4 py-1">
-				<a target="" href="https://huggingface.co/spaces/formospeech/taiwanese-hakka-tts"
+				<a target="" href="https://huggingface.co/spaces/united-link/taiwanese-hakka-tts"
 					> <span>space</span></a
 				>
 			</p>
